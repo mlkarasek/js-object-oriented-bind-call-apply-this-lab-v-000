@@ -1,14 +1,14 @@
 //Your code here
-function justInvoke(fn) {
-
-}
+function justInvoke(fn){
+   return fn()
+ };
 
 function setThisWithCall(fn, thisValue, arg) {
-  return fn()
-};
+  return fn.call(thisValue, arg)
+}
 
 function setThisWithApply(fn, thisValue, args) {
-  return fn.call(thisValue, arg)
+
 }
 
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
